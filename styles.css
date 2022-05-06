@@ -1,0 +1,394 @@
+@charset "utf-8";
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background: #161618;
+    padding: 1% 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    transition: 0.5s;
+}
+
+li, a /* ,button */{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(216, 201, 201);
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: auto;
+    height: 90px;
+    
+}
+
+.imageMe{
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: auto;
+    height: 600px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    padding: 3px 50px 0 0;
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    color: white;
+    padding: 0 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+ul li a:hover{
+    color: rgb(64, 140, 190);
+}
+
+.fa-caret-down{
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+.submenu{
+    margin-right: 40px;
+    padding: 0px 0px;
+}
+
+.submenuMsg{
+    margin-right: 40px;
+    padding: 0px 0px;
+}
+
+ul li ul{   /* Controls the drop down menu for Portfolio */
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    padding-top: 10%;
+    border-radius: 20px 20px 4px 4px;
+    background-color: #161618;
+    width: 120px;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul li{
+    width: 180px;
+    padding: 12px 6px;
+}
+
+ul li ul li a{
+    padding: 5px 0px;
+}
+
+ul li ul li a:hover{
+    color: rgb(64, 140, 190);
+}
+
+/*
+button{
+    margin-left: 20px;
+    padding: 5px 15px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 1.1em;
+    margin-left: 0px;
+} 
+
+button:hover{
+    background-color: rgba(0,136,169,0.6);
+}
+
+.fa-solid{
+    font-size: 15px;
+    padding-left: 3px;
+} 
+*/
+
+h2{
+    font-size: 60px;
+    background-color: lightgray;
+    padding: 8px 24px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+h3{
+    font-size: 22px;
+    background-color: lightgray;
+    padding: 8px 24px;
+    border-radius: 16px;
+    text-align: center;
+    padding-bottom: 9px;
+}
+
+.first-text{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background.jpg);
+    background-attachment: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 105vh;
+}
+
+.first-text h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 80px;
+    background-color: transparent;
+}
+
+.first-text p{
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    text-align: center;
+    width: 40%;
+}
+
+.second-text{
+    background: rgb(65, 65, 136);
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.third-text{
+    height: 105vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fourth-text{
+    background: #90BFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 105vh;
+}
+
+.fifth-text{
+    height: 105vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sectionForm{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerForm{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px black !important;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+button[type="submit"]{
+    transition: .5s ease background-color;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 8px;
+    color: 161618;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"][disabled]{
+    background-color: rgba(145, 145, 156, 0.5);
+}
+
+button[type="submit"]:hover:not([disabled]){
+    background-color: rgb(65, 65, 136,0.8);
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: greenyellow;
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(211, 69, 69);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.radioText{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.25em;
+}
+
+.checkboxInput{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 2%;
+    margin-left: 3px;
+}
+
+.tableSection{
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1%;
+    box-shadow: 0px 0px 20px black !important;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+table tr th, table tr td{
+    /* border: 1px solid #161618;   Controls the cell borders */ 
+    font-size: 1.1vw; /* NEW WAY TO RESIZE FONT. Will resize according to viewport */
+    padding: 1%;
+    font-weight: bold;
+    text-align: center;
+}
+
+table{
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.itt300{
+    background-color: #F9F9E0;
+}
+
+.sta116{
+    background-color: #ECC9C7;
+}
+
+.isp250{
+    background-color: #D9E3DA;
+}
+
+.itt270{
+    background-color: #B7EAE3;
+}
+
+.csc264{
+    background-color: #CCC9FD;
+}
+
+.ent300{
+    background-color: #eed7a1;
+}
+
+.dayTime{
+    background-color: lightgray;
+}
+
+.dayTimeHead{
+    background-color: darkgray;
+}
+
+.timetableHead{
+    background-color: rgb(150, 193, 221);
+}
